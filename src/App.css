@@ -1,42 +1,91 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h2 , h1 ,h3{
+  text-transform: uppercase;
+  font-family: 'PPFormula';
+
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+::selection {
+  color: rgb(0, 0, 0);
+  background-color: #C3EBFF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+::-moz-selection {
+   color: rgb(0, 0, 0);
+   background-color:#C3EBFF;
 }
 
-.card {
-  padding: 2em;
+@font-face {
+  font-family: 'PPFormula';
+  src: url('./components/fonts/PPFormula.woff') format('woff'); /* Ajusta la ruta según la ubicación de tu archivo de fuente */
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(0, 0, 0);
 }
 
-.read-the-docs {
-  color: #888;
+body {
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  background-color: rgb(36, 36, 36);
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #464646;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #383838;
+}
+.app{
+  background-color: rgba(1, 1, 1, 0.663);
+  overflow: hidden;
+}
+
+.background{
+  background-color: rgba(0, 0, 0, 0.836);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background-image: url("https://res.cloudinary.com/dvnhn35l4/image/upload/v1698194123/background_utccu2.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }
