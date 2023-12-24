@@ -1,0 +1,41 @@
+.cart {
+  text-align: center;
+  max-width: 600px; /* O ajusta según sea necesario */
+  margin: 0 auto; /* Centra el contenedor en el eje horizontal */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart h3 {
+  margin-top: 10px; /* Ajusta el espacio entre los elementos h3 según sea necesario */
+}
+
+.cart button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px; /* Ajusta el espacio entre el botón y los elementos anteriores según sea necesario */
+}
+
+.cart button:hover {
+  background-color: #0056b3;
+}
+
+.checkout-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #28a745;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-top: 10px; /* Ajusta el espacio entre el enlace y los elementos anteriores según sea necesario */
+}
+
+.checkout-link:hover {
+  background-color: #218838;
+}

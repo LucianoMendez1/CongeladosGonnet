@@ -1,0 +1,12 @@
+.carrito {
+    font-size: 24px; /* Tamaño del ícono */
+    color: black; /* Color del ícono */
+  
+    margin-right: 2rem;
+}
+
+strong {
+    color: rgb(0, 0, 0); /* Color del número de elementos en el carrito (puedes ajustarlo según tus preferencias) */
+    font-weight: bold;
+  
+}

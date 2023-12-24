@@ -1,17 +1,32 @@
 
-import './home.css'
-import Presentacion from '../presentacion/Presentacion';
+import './home.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { CarritoProvider } from '../../context/CarritoContext';
+import NavBar from '../../components/Navbar/Navbar';
+import ItemListContainer from '../../components/products/Itemlistcontainer/ItemListContainer';
+import ItemDetailConteiner from '../../components/products/ItemDetailContainer/ItemDetailConteiner';
+import Cart from '../Carrito/Cart/Cart';
+import Checkout from '../Carrito/Checkout/Checkout';
+import Presentacion from './presentacion/Presentacion';
 
 const Home = () => {
-    
-
     return (
-        <div>
-         
-            <Presentacion/>
-        
-        </div>
-        
+        <>
+            <BrowserRouter>
+                <CarritoProvider>
+                    <NavBar />
+                    <Routes>
+                        <Route path="/" element={<Presentacion />} />
+                      {/*   <Route path="/" element={<ItemListContainer />} /> */}
+                        <Route path="/categoria/:idCategoria" element={<ItemListContainer />} />
+                        <Route path="/item/:idItem" element={<ItemDetailConteiner />} />
+                        <Route path='/cart' element={<Cart />} />
+                        <Route path='/checkout' element={<Checkout />} />
+                        <Route path='*' element={<h2>Sitio en Construccion</h2>} />
+                    </Routes>
+                </CarritoProvider>
+            </BrowserRouter>
+        </>
     );
 };
 
