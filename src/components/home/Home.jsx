@@ -3,7 +3,7 @@ import './home.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CarritoProvider } from '../../context/CarritoContext';
 import NavBar from '../../components/Navbar/Navbar';
-import ItemListContainer from '../../components/products/Itemlistcontainer/ItemListContainer';
+import ItemListContainer from '../../components/products/ItemListContainer/ItemListContainer';
 import ItemDetailConteiner from '../../components/products/ItemDetailContainer/ItemDetailConteiner';
 import Cart from '../Carrito/Cart/Cart';
 import Checkout from '../Carrito/Checkout/Checkout';
