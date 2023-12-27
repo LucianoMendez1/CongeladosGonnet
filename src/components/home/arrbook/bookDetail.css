@@ -1,6 +1,6 @@
 .box_book_detail{
     width: 100%;
-
+background-color: rgba(208, 244, 255, 0.342);
    position: relative;
    display: flex;
    justify-content: center;
@@ -9,6 +9,7 @@
    flex-direction: row;
    flex-wrap: wrap;
    padding: 2rem; 
+   border-top: 4px solid rgb(224, 224, 224);
 }
 
 
@@ -20,6 +21,16 @@
 @media screen and (max-width:600px) {   
    .box_book_detail img{ 
         width: 20rem;
+       margin: 0 2rem;
+       margin-top: 2rem; 
+   }
+}
+
+@media screen and (max-width:380px) {   
+
+   .box_book_detail img{ 
+        width: 15rem;
+        height: 15rem;
        margin: 0 2rem;
        margin-top: 2rem; 
    }

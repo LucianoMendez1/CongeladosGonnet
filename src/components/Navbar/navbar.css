@@ -1,0 +1,81 @@
+.navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid #364a6f;
+    background-color: #f9f6f4;
+    color: rgb(0, 0, 0);
+  
+  
+  }
+  
+  .logo-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    
+  }
+  
+  .logonav {
+    width: 3rem;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+   flex-direction:row;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    display: inline-block;
+    margin: 50px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+
+    font-size:1.2rem;
+    font-weight:200;
+    width: 90%;
+    position: relative;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+   
+  
+    width: 90%;
+    position: relative;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .main-nav a.active {
+    font-weight: bold;
+  }
+  
+  /* Añade más estilos según tus necesidades */
+  @media screen and (max-width:600px) {   
+    .main-nav ul {
+      list-style: none;
+      display: flex;
+     flex-direction:column;
+      margin: 0;
+      padding: 0;
+    }
+ }
+ 
+ @media screen and (max-width:380px) {   
+ 
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction:column;
+    margin: 0;
+    padding: 0;
+  }
+ }

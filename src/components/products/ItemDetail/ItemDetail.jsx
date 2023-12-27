@@ -20,14 +20,14 @@ const ItemDetail = ({id, nombre, stock, precio, img}) => {
 
     return (
         <div className='contenedorItem'>
-             <img src={img} alt={nombre} />
-            <h2> {nombre} </h2>
-            <h3>Precio: {precio} </h3>
-            <h3>Stock: {stock}</h3>
+             <img className="imgcontenedor" src={img} alt={nombre} />
+             <h2 className="content-name">  {nombre} </h2>
+            <h3 className="content-precio" >Precio:$ {precio} </h3>
+            <h3 className="content-stock">Stock: {stock}</h3>
            
 
             {
-                agregarCantidad > 0 ? (<Link to="/cart">Terminar Compra</Link>) : (<Contador inicial={1} 
+                agregarCantidad > 0 ? (<Link className="content-finish" to="/cart">Terminar Compra</Link>) : (<Contador inicial={1} 
                     stock={stock} funcionAgregar={manejadorCantidad} />)
             }
 

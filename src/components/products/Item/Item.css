@@ -37,7 +37,7 @@
 .cardProducto a {
     display: inline-block;
     padding: 8px 16px;
-    background-color: #007bff;
+    background-color: #efa113;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
@@ -45,5 +45,5 @@
 }
 
 .cardProducto a:hover {
-    background-color: #0056b3;
+    background-color: #5ab300;
 }

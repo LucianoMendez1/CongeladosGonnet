@@ -2,9 +2,9 @@
 import './home.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CarritoProvider } from '../../context/CarritoContext';
-import NavBar from './Navbar/Navbar';
-import ItemListContainer from '../products/ItemListContainer/ItemListContainer';
-import ItemDetailConteiner from '../products/ItemDetailContainer/ItemDetailConteiner';
+import NavBar from '../../components/Navbar/Navbar';
+import ItemListContainer from '../../components/products/Itemlistcontainer/ItemListContainer';
+import ItemDetailConteiner from '../../components/products/ItemDetailContainer/ItemDetailConteiner';
 import Cart from '../Carrito/Cart/Cart';
 import Checkout from '../Carrito/Checkout/Checkout';
 import Presentacion from './presentacion/Presentacion';
