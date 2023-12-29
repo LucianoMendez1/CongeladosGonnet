@@ -13,14 +13,17 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     margin-top: 10px;
+    font-weight: 600;
+    
 }
 
 .cart-item-info h3 {
-    color: #333; /* Cambia el color del título según sea necesario */
+    color: #333; 
+   
 }
 
 .cart-item-info p {
-    margin: 5px 0; /* Ajusta el margen entre párrafos según sea necesario */
+    margin: 5px 0;
 }
 
 .cart-item-info button {
@@ -34,4 +37,9 @@
 
 .cart-item-info button:hover {
     background-color: #0056b3;
+}
+
+.cart-item-image {
+    max-width: 100px; /* Establece el ancho máximo de la imagen según tus necesidades */
+    height: auto;
 }

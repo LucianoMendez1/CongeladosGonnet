@@ -1,0 +1,18 @@
+/* Agrega estilos según tus necesidades */
+.incrementButton {
+    background-color: green;
+    color: white;
+    /* Otros estilos */
+}
+
+.decrementButton {
+    background-color: red;
+    color: white;
+    /* Otros estilos */
+}
+
+.addToCartButton {
+    background-color: blue;
+    color: white;
+    /* Otros estilos */
+}

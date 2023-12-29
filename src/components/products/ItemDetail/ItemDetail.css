@@ -1,103 +1,89 @@
-
 * {
     box-sizing: border-box;
     padding: 0;
-  }
-  
-
-
-/* 
-.contenedorItem {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    flex-direction: column;
-  
-   
-    background-color: #f9f6f4;
-  
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin: 0;
     
 }
 
+.contenedorItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   border-radius: 10px;
+    width: 80%;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin:  auto;
+    margin-top: 1rem;
+}
+
+
 .contenedorItem img {
-    width: 800px;
-    height: 800px;
+    width: 30%;
+    height: auto;
+    max-width: 800px;
+    height: auto;
     object-fit: cover;
-    border-radius: 9rem;
-    padding: 5%;
-    
+    border-radius: 1rem;
+ 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contenedorItem h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 2rem;
-  
-    
-    
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
 }
 
-.contenedorItem h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    text-align: left;
-}
-
+.contenedorItem h3,
 .contenedorItem p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 10px;
     text-align: left;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contenedorItem a {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #007bff;
+    background-color: #5dabff;
     color: #fff;
+    font-weight: 600;
     text-decoration: none;
     margin-top: 20px;
-    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .contenedorItem a:hover {
     background-color: #0056b3;
-} */
+}
+
+
+
 
 @media screen and (max-width: 400px) {
-
-
     .contenedorItem {
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       flex-direction: column;
-       width: 100%;
-       border-radius: 8px;
-       
-    }
-
-    .imgcontenedor {
         width: 100%;
-        height: 30rem;
-      
-       
+        border-radius: 8px;
+        margin-top: 0;
     }
 
-    .content-name{
+    .contenedorItem img {
+        width: 100%;
+        max-width: none;
+        height: 30rem;
+    }
+
+    .content-name {
         font-size: 2rem;
         margin-top: 2rem;
         font-weight: 600;
         color: rgb(19, 19, 19);
     }
 
-    .content-precio{
+    .content-precio {
         padding: 2rem;
     }
-
-    
-
 }
