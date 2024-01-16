@@ -10,12 +10,14 @@ background-color: rgba(208, 244, 255, 0.342);
    flex-wrap: wrap;
    padding: 2rem; 
    border-top: 4px solid rgb(224, 224, 224);
+   
 }
 
 
 .box_book_detail img{ 
     width: 20rem;
    margin: 0 1rem; 
+   
 }
 
 @media screen and (max-width:600px) {   
